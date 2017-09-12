@@ -1,0 +1,9 @@
+<div class="new-post">
+  <%= form_tag users_posts_path, multipart: true do %>
+  <%= label_tag :title %>
+  <%= text_field_tag :title %>
+  <%= label_tag :photo %>
+  <%= file_field_tag :photo %>
+  <%= submit_tag 'Upload' %>
+  <% end %>
+</div>
