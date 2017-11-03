@@ -1,1 +1,9 @@
 <h1>This is homepage</h1>
+<div class="show-post">
+  <% @posts.each do |post| %>
+  <div class="">
+    <%= post.title %>
+    <%= image_tag post.photo.normal.url %>
+  </div>
+  <% end%>
+</div>
